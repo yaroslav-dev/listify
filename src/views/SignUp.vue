@@ -1,7 +1,7 @@
 <template>
   <div class="d-flex flex-column justify-center align-stretch">
-    <app-bar @save-list="$router.push('/')"/>
-    <v-sheet class="mx-auto" style="width:100%;max-width: 500px;">
+    <app-bar @save-list="$router.push('/')" />
+    <v-sheet class="mx-auto" style="width: 100%; max-width: 500px">
       <v-overlay :value="isLoading">
         <v-progress-circular
           indeterminate
@@ -55,7 +55,7 @@
 <script>
 import firebase from "firebase/app";
 import { db } from "../main";
-import AppBar from '../components/AppBar.vue';
+import AppBar from "../components/AppBar.vue";
 
 export default {
   data: () => ({
@@ -108,8 +108,8 @@ export default {
     },
   },
   components: {
-    AppBar
-  }
+    AppBar,
+  },
 };
 </script>
 

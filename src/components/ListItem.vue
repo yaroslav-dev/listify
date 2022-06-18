@@ -76,8 +76,7 @@ export default {
     vibro() {
       setTimeout(() => {
         window.navigator.vibrate(50);
-      }, 100)
-      
+      }, 100);
     },
   },
 };

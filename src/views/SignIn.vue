@@ -51,13 +51,11 @@ export default {
           let user = result.user;
           // ...
 
-          db.collection("users")
-            .doc(user.uid)
-            .set({
-              name: user.displayName,
-              email: user.email,
-              photo: user.photoURL,
-            });
+          db.collection("users").doc(user.uid).set({
+            name: user.displayName,
+            email: user.email,
+            photo: user.photoURL,
+          });
 
           this.$store.dispatch("user/setUserData", {
             id: user.uid,

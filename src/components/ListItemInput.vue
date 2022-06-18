@@ -47,22 +47,22 @@ export default {
         };
         this.$emit("add-item", item);
         this.title = "";
-       setTimeout(function() {
+        setTimeout(function () {
           window.scrollTo({
             top: 9999,
-            behavior: 'smooth'
+            behavior: "smooth",
           });
         }, 0);
       }
     },
     scrollDown() {
-      setTimeout(function() {
+      setTimeout(function () {
         window.scrollTo({
           top: 9999,
-          behavior: 'smooth'
+          behavior: "smooth",
         });
       }, 1000);
-    }
+    },
   },
 };
 </script>

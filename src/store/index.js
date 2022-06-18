@@ -19,11 +19,11 @@ export default new Vuex.Store({
       state.lists.push(list)
       // localStorage.setItem('lists', JSON.stringify(state.lists))
     },
-    updateList(state, {title, id, items}) {
+    updateList(state, { title, id, items }) {
       const lists = state.lists.concat()
       const idx = lists.findIndex(t => t.id === id)
       const list = lists[idx]
-      lists[idx] = {...list, title, id, items}
+      lists[idx] = { ...list, title, id, items }
       state.lists = lists
       // localStorage.setItem('lists', JSON.stringify(state.lists))
     },
@@ -42,13 +42,13 @@ export default new Vuex.Store({
     }
   },
   actions: {
-    createList({commit}, list) {
+    createList({ commit }, list) {
       commit('createList', list)
     },
-    updateList({commit}, list) {
+    updateList({ commit }, list) {
       commit('updateList', list)
     },
-    deleteList({commit}, list) {
+    deleteList({ commit }, list) {
       commit('deleteList', list)
     },
     updateLists(context, lists) {

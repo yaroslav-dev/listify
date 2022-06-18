@@ -139,13 +139,11 @@ export default {
           .doc(uid)
           .collection("lists")
           .doc(`${this.list.id}`)
-          .set(
-            {
-              id: this.list.id,
-              items: this.list.items,
-              title: this.list.title
-            }
-          );
+          .set({
+            id: this.list.id,
+            items: this.list.items,
+            title: this.list.title,
+          });
         this.$router.push("/");
       }
     },
