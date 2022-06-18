@@ -1,9 +1,7 @@
 # listify
 
 ## Try it
-```
 https://listify.pp.ua/
-```
 
 ## Project setup
 ```
